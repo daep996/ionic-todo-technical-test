@@ -23,7 +23,10 @@
     "@angular/router": "^19.0.0",
     "@ionic/angular": "^8.0.0",
     "@ionic/cordova-builders": "^12.2.0",
+    "@railway/cli": "^4.1.0",
+    "@types/pg": "^8.11.14",
     "ionicons": "^7.0.0",
+    "pg": "^8.15.6",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

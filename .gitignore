@@ -17,6 +17,9 @@ log.txt
 /.versions
 /coverage
 
+# secrets
+src/environments/environment.local.ts
+
 # Ionic
 /.ionic
 /www
