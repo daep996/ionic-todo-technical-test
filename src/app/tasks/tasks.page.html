@@ -21,9 +21,9 @@
         <ion-item>
           State:
           @if (task.completed) {
-            <ion-badge color="success">Done</ion-badge>
+          <ion-badge color="success">Done</ion-badge>
           } @else {
-            <ion-badge color="warning">Uncomplete</ion-badge>
+          <ion-badge color="warning">Uncomplete</ion-badge>
           }
         </ion-item>
       </ion-card-subtitle>
@@ -35,6 +35,17 @@
       <ion-icon slot="start" name="pencil"></ion-icon>
       Edit
     </ion-button>
+    <ion-button (click)="deleteTask(task.id)" size="small" shape="round" color="danger">
+      <ion-icon slot="start" name="trash-bin"></ion-icon>
+      Delete
+    </ion-button>
+    <ion-toast
+      icon="trash-bin"
+      message="Task Deleted correctly!"
+      [isOpen]="isToastOpen"
+      [duration]="2200"
+      (didDismiss)="setOpen(false)">
+    </ion-toast>
   </ion-card>
   } @empty {
   <p class="task-not-found">No Tasks found.</p>

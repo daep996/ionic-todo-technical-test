@@ -17,7 +17,8 @@
   <ion-list>
     <app-category-item 
       *ngFor="let category of categories" 
-      [category]="category">
+      [category]="category"
+    >
     </app-category-item>
     
     <ion-item *ngIf="categories.length === 0">
